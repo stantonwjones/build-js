@@ -9,7 +9,6 @@ while read line
 do
     nextArg=$line' '
     catArgs=$catArgs$nextArg
-    echo $catArgs
 done < $buildFile 
 
 cat $catArgs > $outputFile
